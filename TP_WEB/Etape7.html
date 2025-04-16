@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sécurité JavaScript côté client</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.6em;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .important {
+      background-color: #ffeaa7;
+      border-left: 5px solid #fdcb6e;
+      padding: 10px 15px;
+      margin: 20px 0;
+    }
+
+    .conclusion {
+      background-color: #dfe6e9;
+      border-left: 5px solid #636e72;
+      padding: 15px 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sécurité du JavaScript côté client</h1>
+
+  <div class="important">
+    Le code JavaScript exécuté dans le navigateur est toujours accessible à toute personne
+    qui sait utiliser les outils de développement (DevTools). Cela signifie que toute donnée sensible comme :
+    <ul>
+      <li>un mot de passe,</li>
+      <li>une clé API,</li>
+      <li>un token d’accès,</li>
+      <li>ou une logique de sécurité,</li>
+    </ul>
+    peut être vue ou copiée par n’importe quel utilisateur.
+  </div>
+
+  <h2>Méthodes pour améliorer la sécurité côté client :</h2>
+  <ul>
+    <li><strong>Déplacer la logique sensible vers le backend</strong></li>
+    <li><strong>Utiliser l'obfuscation ou la minification</strong></li>
+    <li><strong>Variables d’environnement</strong></li>
+    <li><strong>Utiliser HTTPS</strong></li>
+    <li><strong>Authentification sécurisée avec des tokens (comme JWT)</strong></li>
+  </ul>
+
+  <div class="conclusion">
+    Même si on peut rendre le JavaScript plus difficile à comprendre, on ne peut jamais garantir une sécurité totale côté client.<br>
+    Pour toute donnée ou logique sensible, il faut utiliser le back-end.
+  </div>
+
+</body>
+</html>

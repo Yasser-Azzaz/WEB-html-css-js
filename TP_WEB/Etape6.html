@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP3 - Etape 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table_container">
+        <div id="form_container">
+            <div class="form_group">
+                <label class="form_label">Nom:</label>
+                <input type="text" id="form_nom" class="form_field"/>
+            </div>
+            <div class="form_group">
+                <label class="form_label">Prénom:</label>
+                <input type="text" id="form_prenom" class="form_field"/>
+            </div>
+            <div class="form_group">
+                <label class="form_label">Points:</label>
+                <input type="number" id="form_points" class="form_field"/>
+            </div>
+            <button onclick="doNewData()">Ajouter</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_text">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p2"></p>
+            <p id="p3">Totale point(s)= 0</p>
+        </div>
+        <button onclick="consoleTableau()">Console Tableau</button>
+        <button onclick="deleteRow()">Supprimer</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+<!--
+Explication du code "deleteRow()" sous forme de besoins:
+
+1.  Vérifier si le tableau contient des lignes
+2.  Récupérer toutes les lignes du tableau
+3.  Vérifier les cases à cocher pour chaque ligne
+4.  Demander confirmation à l'utilisateur
+5.  Supprimer les lignes cochées
+6.  Mettre à jour les données liées
+7.  Informer l'utilisateur de la suppression
+8.  Mettre à jour le résumé
+9.  Gérer le cas où aucune case n'est cochée
+
+Conclusion :
+Cette fonction répond bien aux besoins d’un tableau interactif : elle est sûre, claire pour l’utilisateur,
+et maintient les données synchronisées avec l'affichage.
+-->
+
+<!--Remarque:Les lignes ajoutées et/ou supprimées  à la table sont perdues quand on actualise la page.-->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP3 - Etape 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="table_container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_text">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col_number">1</td>
+                    <td class="col_text">Nom1</td>
+                    <td class="col_text">Prenom1</td>
+                    <td class="col_text">5</td>
+                    <td class="col_chkbox"><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td class="col_number">2</td>
+                    <td class="col_text">Nom2</td>
+                    <td class="col_text">Prenom2</td>
+                    <td class="col_text">5</td>
+                    <td class="col_chkbox"><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td class="col_number">3</td>
+                    <td class="col_text">Nom3</td>
+                    <td class="col_text">Prenom3</td>
+                    <td class="col_text">5</td>
+                    <td class="col_chkbox"><input type="checkbox"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)">Ajouter</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!--Remarque:Les lignes ajoutées à la table sont perdues quand on actualise la page.-->
